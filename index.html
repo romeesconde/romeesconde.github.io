@@ -107,6 +107,32 @@
       margin-top: 10px;
     }
 
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 25px 0;
+    }
+
+    .highlight-card {
+      background: #f8f9ff;
+      border: 1px solid #d9def5;
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .highlight-card strong {
+      display: block;
+      color: #1f3a93;
+      font-size: 22px;
+    }
+
+    .highlight-card span {
+      font-size: 13px;
+      color: #555;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -143,6 +169,24 @@
       border-left: 4px solid #1f3a93;
       padding: 10px 12px;
       border-radius: 6px;
+    }
+
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .tech-badges span {
+      display: inline-block;
+      background: #eef2ff;
+      color: #1f3a93;
+      border: 1px solid #d9def5;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: bold;
     }
 
     .cert-list {
@@ -268,6 +312,16 @@
         margin: 20px 12px;
         padding: 25px;
       }
+
+      .highlights {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .highlights {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 
@@ -276,7 +330,7 @@
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
-      <div class="nav-brand">My Resume</div>
+      <div class="nav-brand">Rome Esconde</div>
 
 ```
   <div class="nav-links">
@@ -305,6 +359,28 @@
     GitHub: <a href="https://github.com/romeesconde" target="_blank" rel="noopener noreferrer">github.com/romeesconde</a><br>
     LinkedIn: <a href="https://www.linkedin.com/in/rome-esconde" target="_blank" rel="noopener noreferrer">linkedin.com/in/rome-esconde</a>
   </p>
+</div>
+
+<div class="highlights">
+  <div class="highlight-card">
+    <strong>240 Hours</strong>
+    <span>OJT / Internship Experience</span>
+  </div>
+
+  <div class="highlight-card">
+    <strong>2 Projects</strong>
+    <span>AI Monitoring + Arduino System</span>
+  </div>
+
+  <div class="highlight-card">
+    <strong>3 Certifications</strong>
+    <span>Cisco Networking Academy</span>
+  </div>
+
+  <div class="highlight-card">
+    <strong>2027</strong>
+    <span>Expected Graduation</span>
+  </div>
 </div>
 
 <h2 id="about" class="section-anchor">About Me</h2>
@@ -339,6 +415,17 @@
     truckscale activity and driver/person exit safety.
   </p>
 
+  <div class="tech-badges">
+    <span>Python</span>
+    <span>Flask</span>
+    <span>YOLOv8</span>
+    <span>RTSP Streaming</span>
+    <span>MediaMTX</span>
+    <span>MySQL</span>
+    <span>Telegram API</span>
+    <span>CCTV Monitoring</span>
+  </div>
+
   <p class="project-note">
     Note: This repository is a sanitized portfolio version and does not include confidential company files,
     real CCTV footage, private credentials, internal IP addresses, API tokens, Telegram bot tokens,
@@ -351,6 +438,7 @@
     <li>Designed safety logic for driver/person exit checking.</li>
     <li>Improved reliability using ROI filtering, ignore zones, and false-trigger reduction logic.</li>
   </ul>
+
   <a class="button" href="https://github.com/romeesconde/dual-camera-ai-truckscale-safety-alert-system" target="_blank" rel="noopener noreferrer">View Project</a>
 </div>
 
@@ -361,6 +449,16 @@
     and a relay-controlled water pump. The system detects soil moisture level and
     activates the pump when watering is needed.
   </p>
+
+  <div class="tech-badges">
+    <span>Arduino Uno</span>
+    <span>Soil Moisture Sensor</span>
+    <span>Relay Control</span>
+    <span>Water Pump</span>
+    <span>Sensor Interfacing</span>
+    <span>Basic Electronics</span>
+  </div>
+
   <ul>
     <li>Applied embedded systems and sensor interfacing concepts.</li>
     <li>Used relay control to automate water pump activation.</li>
