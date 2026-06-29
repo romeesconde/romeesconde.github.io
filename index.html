@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +77,104 @@
       text-decoration: none;
     }
 
+    /* Certification clickable cards */
+    .cert-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .cert-list li {
+      margin-bottom: 12px;
+    }
+
+    .cert-button {
+      width: 100%;
+      text-align: left;
+      padding: 14px 16px;
+      background: #f8f9ff;
+      border: 1px solid #d9def5;
+      border-radius: 8px;
+      color: #222;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s ease;
+    }
+
+    .cert-button:hover {
+      background: #eef2ff;
+      border-color: #1f3a93;
+      transform: translateY(-2px);
+    }
+
+    .cert-button strong {
+      color: #1f3a93;
+    }
+
+    .cert-button span {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    /* Certificate modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      position: relative;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+      color: #1f3a93;
+      padding-right: 80px;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: #1f3a93;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .close-btn:hover {
+      background: #14245c;
+    }
+
     footer {
       margin-top: 35px;
       text-align: center;
@@ -94,7 +193,7 @@
         Samal, Bataan, Philippines<br>
         Email: <a href="mailto:rome.esconde29@gmail.com">rome.esconde29@gmail.com</a><br>
         GitHub: <a href="https://github.com/romeesconde" target="_blank">github.com/romeesconde</a><br>
-        LinkedIn: <a href="https://www.https://www.linkedin.com/in/rome-esconde" target="_blank">https://www.linkedin.com/in/rome-esconde</a>
+        LinkedIn: <a href="https://www.linkedin.com/in/rome-esconde" target="_blank">linkedin.com/in/rome-esconde</a>
       </p>
     </div>
 
@@ -160,10 +259,33 @@
     </p>
 
     <h2>Certifications</h2>
-    <ul>
-      <li>Networking Basics – Cisco Networking Academy</li>
-      <li>Introduction to IoT and Digital Transformation – Cisco Networking Academy</li>
-      <li>Computer Hardware Fundamentals Basics – Cisco Networking Academy</li>
+    <ul class="cert-list">
+      <li>
+        <button 
+          class="cert-button" 
+          onclick="openCertificate('Networking Basics – Cisco Networking Academy', 'assets/certificates/networking-basics.jpg')">
+          <strong>Networking Basics</strong>
+          <span>Cisco Networking Academy — Click to view certificate</span>
+        </button>
+      </li>
+
+      <li>
+        <button 
+          class="cert-button" 
+          onclick="openCertificate('Introduction to IoT and Digital Transformation – Cisco Networking Academy', 'assets/certificates/iot-digital-transformation.jpg')">
+          <strong>Introduction to IoT and Digital Transformation</strong>
+          <span>Cisco Networking Academy — Click to view certificate</span>
+        </button>
+      </li>
+
+      <li>
+        <button 
+          class="cert-button" 
+          onclick="openCertificate('Computer Hardware Fundamentals Basics – Cisco Networking Academy', 'assets/certificates/computer-hardware-fundamentals.jpg')">
+          <strong>Computer Hardware Fundamentals Basics</strong>
+          <span>Cisco Networking Academy — Click to view certificate</span>
+        </button>
+      </li>
     </ul>
 
     <h2>Resume</h2>
@@ -175,5 +297,43 @@
       <p>© 2026 Rome Aeross Esconde | Digital Resume</p>
     </footer>
   </div>
+
+  <!-- Certificate popup modal -->
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeCertificate()">Close</button>
+      <h3 id="certificateTitle"></h3>
+      <img id="certificateImage" src="" alt="Certificate Image">
+    </div>
+  </div>
+
+  <script>
+    function openCertificate(title, imagePath) {
+      document.getElementById("certificateTitle").textContent = title;
+      document.getElementById("certificateImage").src = imagePath;
+      document.getElementById("certificateImage").alt = title;
+      document.getElementById("certificateModal").classList.add("show");
+    }
+
+    function closeCertificate() {
+      document.getElementById("certificateModal").classList.remove("show");
+      document.getElementById("certificateImage").src = "";
+    }
+
+    window.addEventListener("click", function(event) {
+      const modal = document.getElementById("certificateModal");
+
+      if (event.target === modal) {
+        closeCertificate();
+      }
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeCertificate();
+      }
+    });
+  </script>
 </body>
 </html>
+```
