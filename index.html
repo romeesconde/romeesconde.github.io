@@ -113,7 +113,12 @@
 
     .project,
     .experience {
-      margin-bottom: 15px;
+      margin-bottom: 22px;
+    }
+
+    .project h3,
+    .experience h3 {
+      margin-bottom: 8px;
     }
 
     .button {
@@ -129,6 +134,15 @@
     .button:hover {
       background: #14245c;
       text-decoration: none;
+    }
+
+    .project-note {
+      font-size: 14px;
+      color: #555;
+      background: #f8f9ff;
+      border-left: 4px solid #1f3a93;
+      padding: 10px 12px;
+      border-radius: 6px;
     }
 
     .cert-list {
@@ -262,13 +276,13 @@
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
-      <div class="nav-brand">Rome Esconde</div>
+      <div class="nav-brand">My Resume</div>
 
 ```
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#project">Project</a>
+    <a href="#project">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
     <a href="#certifications">Certifications</a>
@@ -315,7 +329,8 @@
   </ul>
 </div>
 
-<h2 id="project" class="section-anchor">Featured Project</h2>
+<h2 id="project" class="section-anchor">Technical Projects</h2>
+
 <div class="project">
   <h3>Dual-Camera AI Truckscale Driver Exit Safety Alert System</h3>
   <p>
@@ -323,6 +338,13 @@
     YOLO object detection, RTSP streaming, MySQL logging, and Telegram/API alerts to monitor
     truckscale activity and driver/person exit safety.
   </p>
+
+  <p class="project-note">
+    Note: This repository is a sanitized portfolio version and does not include confidential company files,
+    real CCTV footage, private credentials, internal IP addresses, API tokens, Telegram bot tokens,
+    database passwords, or sensitive operational data.
+  </p>
+
   <ul>
     <li>Implemented primary/secondary camera monitoring logic.</li>
     <li>Used YOLOv8 for vehicle and person detection.</li>
@@ -330,6 +352,20 @@
     <li>Improved reliability using ROI filtering, ignore zones, and false-trigger reduction logic.</li>
   </ul>
   <a class="button" href="https://github.com/romeesconde/dual-camera-ai-truckscale-safety-alert-system" target="_blank" rel="noopener noreferrer">View Project</a>
+</div>
+
+<div class="project">
+  <h3>Arduino-Based Smart Irrigation System (Soil Moisture Sensor)</h3>
+  <p>
+    Developed an automated watering system using Arduino Uno, a soil moisture sensor,
+    and a relay-controlled water pump. The system detects soil moisture level and
+    activates the pump when watering is needed.
+  </p>
+  <ul>
+    <li>Applied embedded systems and sensor interfacing concepts.</li>
+    <li>Used relay control to automate water pump activation.</li>
+    <li>Practiced circuit integration, troubleshooting, and basic electronics.</li>
+  </ul>
 </div>
 
 <h2 id="skills" class="section-anchor">Technical Skills</h2>
