@@ -5,265 +5,264 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rome Aeross Esconde | Digital Resume</title>
+
   <style>
     html {
       scroll-behavior: smooth;
     }
 
-```
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  color: #222;
-  background: #f5f5f5;
-}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f5f5;
+    }
 
-.site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 998;
-  background: #1f3a93;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-}
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 998;
+      background: #1f3a93;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
 
-.nav-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
+    .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
 
-.nav-brand {
-  color: white;
-  font-weight: bold;
-  white-space: nowrap;
-}
+    .nav-brand {
+      color: white;
+      font-weight: bold;
+      white-space: nowrap;
+    }
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: flex-end;
-}
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
 
-.nav-links a {
-  color: white;
-  font-size: 14px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-}
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
 
-.nav-links a:hover {
-  background: rgba(255,255,255,0.18);
-  text-decoration: none;
-}
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.18);
+      text-decoration: none;
+    }
 
-.section-anchor {
-  scroll-margin-top: 80px;
-}
+    .section-anchor {
+      scroll-margin-top: 80px;
+    }
 
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
 
-h1 {
-  margin-bottom: 5px;
-  color: #1f3a93;
-}
+    h1 {
+      margin-bottom: 5px;
+      color: #1f3a93;
+    }
 
-h2 {
-  color: #1f3a93;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-  margin-top: 30px;
-}
+    h2 {
+      color: #1f3a93;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
 
-a {
-  color: #1f3a93;
-  text-decoration: none;
-}
+    a {
+      color: #1f3a93;
+      text-decoration: none;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.contact {
-  margin-bottom: 20px;
-  color: #444;
-}
+    .contact {
+      margin-bottom: 20px;
+      color: #444;
+    }
 
-.tagline {
-  font-weight: bold;
-  margin-top: 10px;
-}
+    .tagline {
+      font-weight: bold;
+      margin-top: 10px;
+    }
 
-ul {
-  padding-left: 20px;
-}
+    ul {
+      padding-left: 20px;
+    }
 
-.project, .experience {
-  margin-bottom: 15px;
-}
+    .project,
+    .experience {
+      margin-bottom: 15px;
+    }
 
-.button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 14px;
-  background: #1f3a93;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #1f3a93;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
 
-.button:hover {
-  background: #14245c;
-  text-decoration: none;
-}
+    .button:hover {
+      background: #14245c;
+      text-decoration: none;
+    }
 
-/* Certification clickable cards */
-.cert-list {
-  list-style: none;
-  padding-left: 0;
-}
+    .cert-list {
+      list-style: none;
+      padding-left: 0;
+    }
 
-.cert-list li {
-  margin-bottom: 12px;
-}
+    .cert-list li {
+      margin-bottom: 12px;
+    }
 
-.cert-button {
-  width: 100%;
-  text-align: left;
-  padding: 14px 16px;
-  background: #f8f9ff;
-  border: 1px solid #d9def5;
-  border-radius: 8px;
-  color: #222;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.2s ease;
-}
+    .cert-button {
+      width: 100%;
+      text-align: left;
+      padding: 14px 16px;
+      background: #f8f9ff;
+      border: 1px solid #d9def5;
+      border-radius: 8px;
+      color: #222;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s ease;
+    }
 
-.cert-button:hover {
-  background: #eef2ff;
-  border-color: #1f3a93;
-  transform: translateY(-2px);
-}
+    .cert-button:hover {
+      background: #eef2ff;
+      border-color: #1f3a93;
+      transform: translateY(-2px);
+    }
 
-.cert-button strong {
-  color: #1f3a93;
-}
+    .cert-button strong {
+      color: #1f3a93;
+    }
 
-.cert-button span {
-  display: block;
-  font-size: 14px;
-  color: #555;
-  margin-top: 4px;
-}
+    .cert-button span {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-top: 4px;
+    }
 
-/* Certificate modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
 
-.modal.show {
-  display: flex;
-}
+    .modal.show {
+      display: flex;
+    }
 
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 900px;
-  width: 100%;
-  max-height: 90vh;
-  overflow: auto;
-  position: relative;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-}
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      position: relative;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
 
-.modal-content h3 {
-  margin-top: 0;
-  color: #1f3a93;
-  padding-right: 80px;
-}
+    .modal-content h3 {
+      margin-top: 0;
+      color: #1f3a93;
+      padding-right: 80px;
+    }
 
-.modal-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
 
-.close-btn {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  background: #1f3a93;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 16px;
-}
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: #1f3a93;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-.close-btn:hover {
-  background: #14245c;
-}
+    .close-btn:hover {
+      background: #14245c;
+    }
 
-footer {
-  margin-top: 35px;
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-}
+    footer {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
 
-@media (max-width: 700px) {
-  .nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
+    @media (max-width: 700px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
 
-  .nav-links {
-    justify-content: flex-start;
-  }
+      .nav-links {
+        justify-content: flex-start;
+      }
 
-  .nav-links a {
-    font-size: 13px;
-    padding: 5px 8px;
-  }
+      .nav-links a {
+        font-size: 13px;
+        padding: 5px 8px;
+      }
 
-  .container {
-    margin: 20px 12px;
-    padding: 25px;
-  }
-}
-```
-
+      .container {
+        margin: 20px 12px;
+        padding: 25px;
+      }
+    }
   </style>
+
 </head>
+
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
-      <div class="nav-brand">Rome Esconde</div>
+      <div class="nav-brand">My Resume</div>
 
 ```
   <div class="nav-links">
